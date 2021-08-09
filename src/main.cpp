@@ -5,19 +5,13 @@ using namespace std;
 
 #define mydef "this is my def"
 
+#include "functions.h"
+ 
+//main function
 
-// function defs
-// #################################
-float myfrac(float a, float b);
-int multiply(int a, int b);
-char mychar(char a, char b);
-string mystring(string a, string b);
-//###################################
-
-//main function######################
 int main()
 {
-	std::cout << "HELLO World" << std::endl;
+	helloworld();
 	string mystr = "Hello";
 	int a = 5;
 	int b = 3;
@@ -35,32 +29,5 @@ int main()
 	cout << mydef << endl;
 	cout << "here comes fraction: a/b= ";
 	cout << myfrac(a,b)<<endl;
-	
+	return 0;	
 }
-
-int multiply(int a, int b)
-{
-	return a*b;
-}
-
-
-char mychar(char a, char b)
-{
-	cout << "first char is:";
-	cout << a << endl;
-	cout << "second = " ;
-	cout << b << endl;
-	return a+b;
-}
-
-string mystring(string a, string b)
-{
-	cout << a+b;
-	return b;
-}
-
-float myfrac(float a, float b)
-{
-	return a/b;
-}
-
