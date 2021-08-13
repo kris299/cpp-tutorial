@@ -6,18 +6,31 @@ using namespace std;
 
 int integers()
 {
-	int a = 5;
-	int b = 3;
-	int myhex = 0x4b;
-	cout << "a = ";
-	cout << a << endl;
-	cout << "b = ";
-	cout << b << endl;
-	cout << "0x4b =";
-	cout << myhex << endl;
-	cout << "a*b = ";	
-	cout << multiply(a,b) << endl;
-	cout << "a/b = ";
-	cout << myfrac(a,b) << endl;
+	int integers = -1;
+	while(integers != 0)
+	{
+		system("clear");	// clears the terminal window	
+		cout << "integers are one of the basic c++ data types" << endl;
+		cout << endl;
+		cout << "Enter:" << endl;
+		cout << endl;
+		cout << " <1> to show the code of an example using intergers" << endl;
+		cout << " <2> to run the example";
+		cout << endl;
+
+		integers = user_int_input(integers);
+
+		switch(integers)
+		{
+			case 1:
+				integer_example();
+				break;
+			case 2:
+				//run the example
+				break;	
+			default:
+				break;
+		}
+	}
 	return 0;
 }
