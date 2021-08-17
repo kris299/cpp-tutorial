@@ -12,6 +12,7 @@ int integer_infos();
 int compiling();
 int pointer();
 int pointer_example();
+int example_template(string example_name);
 void hello_world_tutorial();
 int conditional_statements();
 int datatypes();
