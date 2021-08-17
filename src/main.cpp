@@ -21,11 +21,13 @@ int main()
 		cout << endl;
 		cout << "Enter:" << endl;
 		cout << " <1> to learn about the \"Hello World\" programm!" << endl; 
-		cout << " <2> to learn about Data types in c++" << endl;
-		cout << " <3> to learn about conditional statements" << endl;
-		cout << " <4> to learn about loops" << endl;
-		cout << " <5> to learn about input and output in c++" << endl;
-		//cout << " <6> add your own stuff" << endl;
+		cout << " <2> to learn about compiling c++ code" << endl;
+		cout << " <3> to learn about Data types in c++" << endl;
+		cout << " <4> to learn about conditional statements" << endl;
+		cout << " <5> to learn about loops" << endl;
+		cout << " <6> to learn about input and output in c++" << endl;
+		cout << " <7> to learn about pointer in c++" << endl;
+		//cout << " <> add your own stuff" << endl;
 		cout << endl;
 		cout << " <9> to look//edit the source code" << endl;
 		cout << " <10> invoke make to complile changes!" << endl;
@@ -46,24 +48,34 @@ int main()
 
 		switch (main){
 
+			case 0:
+				break;
+
 			case 1:
 				hello_world_tutorial();
 				break;
 
 			case 2:
-				datatypes();
+				compiling();
 				break;
 			case 3:
-				conditional_statements();
+				datatypes();
 				break;
 			case 4:
+				conditional_statements();
+				break;
+			case 5:
 				loops();
 				break;
-			case 5: 
+			case 6: 
 				input_and_output();
 				break;
 
-			case 6:
+			case 7:
+				pointer();
+				break;
+
+			case 8:
 				// add your own code here
 				break;
 

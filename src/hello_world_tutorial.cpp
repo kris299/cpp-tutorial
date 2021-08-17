@@ -49,7 +49,6 @@ void hello_world_tutorial()
 				cin.get();
 				break;
 
-
 			case 4:
 				system("clear");
 				system("cp -v hello_world.cpp ../user_modified/"
@@ -75,6 +74,7 @@ void hello_world_tutorial()
 				system("clear");
 				system("vim hello_world_tutorial.cpp");
 				break;
+
 			default:
 				break;
 		}

@@ -14,21 +14,41 @@ int integers()
 		cout << endl;
 		cout << "Enter:" << endl;
 		cout << endl;
-		cout << " <1> to show the code of an example using intergers" << endl;
-		cout << " <2> to run the example";
+		cout << " <1> type of integers" << endl;
+		cout << " <2> to run the example" << endl;
+		cout << " <3> to show the code of an example using intergers" << endl;
+		cout << " <10> to read/edit source code" << endl;
+		cout << endl;
+		cout << " <0> to go back" << endl;
 		cout << endl;
 
 		integers = user_int_input(integers);
 
 		switch(integers)
 		{
+			case 0:
+				integer_infos();
+				break;
+
 			case 1:
+				integer_infos();
+				break;
+
+			case 2:
+				system("clear");
 				integer_example();
 				break;
-			case 2:
-				//run the example
+			case 3:
+				system("vim integer_example.cpp");
 				break;	
+
+
+			case 10:
+				system("vim integers.cpp");
+				break;
+
 			default:
+				cout << "Not available" << endl;
 				break;
 		}
 	}
