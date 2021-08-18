@@ -19,23 +19,44 @@ int input_and_output()
 		cout << " <4> to learn about writing to textfiles" << endl;
 		cout << endl;
 		cout << " <0> to go back" << endl;
+		cout << endl;
+		cout << " >> ";
 		
 		input_and_output = user_int_input(input_and_output);
 		
 		switch (input_and_output)
 		{
 			case 1:
-				cout << "option 1";
+				system("clear");
+				cout << "Not yet implemented ..." << endl;
+				cout << endl;
+				cout << "Hit Enter to continue" << endl;
+				cin.get();
 				//terminal_output();
 				break;
 			case 2:
 				//terminal_input();
+				system("clear");
+				cout << "Not yet implemented ..." << endl;
+				cout << endl;
+				cout << "Hit Enter to continue" << endl;
+				cin.get();
 				break;
 			case 3:
 				//reading_textfiles();
+				system("clear");
+				cout << "Not yet implemented ..." << endl;
+				cout << endl;
+				cout << "Hit Enter to continue" << endl;
+				cin.get();
 				break;
 			case 4:
 				//writing_to_textfiles();
+				system("clear");
+				cout << "Not yet implemented ..." << endl;
+				cout << endl;
+				cout << "Hit Enter to continue" << endl;
+				cin.get();
 				break;
 			default:
 				break;

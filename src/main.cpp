@@ -30,7 +30,8 @@ int main()
 		//cout << " <> add your own stuff" << endl;
 		cout << endl;
 		cout << " <9> to look//edit the source code" << endl;
-		cout << " <10> invoke make to complile changes!" << endl;
+		cout << " <10> to invoke \"make cpp-tutorial\" to complile changes!"
+		       	<< endl;
 		cout << " <11> restart program" << endl;
  		cout << " <0> to quit program" << endl;
 		cout << endl;

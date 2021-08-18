@@ -21,7 +21,7 @@ int integers()
 		cout << endl;
 		cout << " <0> to go back" << endl;
 		cout << endl;
-
+		cout << " >> ";
 		integers = user_int_input(integers);
 
 		switch(integers)
