@@ -1,11 +1,10 @@
 #include "header.h"
 
-int conditional_statements() {
-
-	// some conditional statements
-
+int to_do()
+{
+	 
 	system("clear");
-	cout << "Not yet implemented ..." << endl;
+	cout << "to do" << endl;
 	cout << endl;
 	cout << "Hit Enter to continue" << endl;
 	cin.get();

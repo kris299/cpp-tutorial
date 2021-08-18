@@ -1,6 +1,6 @@
 SHELL = /bin/sh
 
-OBJS = main.o algebra.o helloworld.o integers.o strings.o chars.o datatypes.o inputhandle.o loops.o conditional_statements.o input_and_output.o hello_world_tutorial.o integer_example.o integer_infos.o compiling.o pointer.o pointer_example.o example_template.o
+OBJS = main.o algebra.o helloworld.o integers.o strings.o chars.o datatypes.o inputhandle.o loops.o conditional_statements.o input_and_output.o hello_world_tutorial.o integer_example.o integer_infos.o compiling.o pointer.o pointer_example.o example_template.o to_do.o
 
 CFLAG = -Wall -g
 CC =g++
@@ -33,6 +33,15 @@ do_while_loop_example:
 
 backup: 
 	-for ii in *.h *.cpp;do cp -v "$$ii" ../backup/"$$ii".bak; done
+
+user-backup: 
+	-for ii in *.h *.cpp;do cp -v "$$ii" ../user_backup/"$$ii".bak; done
+
+restore:
+	-for ii in ../backup/*.bak; do jj="$${ii%.bak}"; cp "$$ii" ../src/"$${jj#../backup/}"; done
+	
+user-restore:
+	-for ii in ../user_backup/*.bak; do jj="$${ii%.bak}"; cp "$$ii" ../src/"$${jj#../backup/}"; done
 
 all: cpp-tutorial hello-world for_loop_example while_loop_example do_while_loop_example nested_loop_example backup
 

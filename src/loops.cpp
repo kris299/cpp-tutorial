@@ -16,6 +16,8 @@ int loops() {
 		cout << " <3> to learn \"do while\" loops" << endl;
 		cout << " <4> to learn \"nested\" loops" << endl;
 		cout << " <0> to go back"<< endl;
+		cout << endl;
+		cout << " >> ";
 
 		loop = user_int_input(loop);
 

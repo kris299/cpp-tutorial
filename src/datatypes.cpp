@@ -40,7 +40,8 @@ int datatypes()
 
 		while(!(cin >> datatypes)) {
 			
-			cout << "input must a integer" << endl;
+			cout << " >> input must a integer" << endl;
+			cout << " >> ";
 			cin.clear();
 			cin.ignore(INT_MAX, '\n');
 		}
