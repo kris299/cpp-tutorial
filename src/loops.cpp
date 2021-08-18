@@ -15,6 +15,7 @@ int loops() {
 		cout << " <2> to learn \"while\" loops" << endl;
 		cout << " <3> to learn \"do while\" loops" << endl;
 		cout << " <4> to learn \"nested\" loops" << endl;
+		cout << " <10> to view/edit the code for this site" << endl;
 		cout << " <0> to go back"<< endl;
 		cout << endl;
 		cout << " >> ";
@@ -45,6 +46,14 @@ int loops() {
 				loop_example = "nested_loop_example";
 				example_template(loop_example);
 				break;
+			case 5:
+				loop_example = "break_continue_example";
+				example_template(loop_example);
+				break;
+			case 10:
+				system("vim loops.cpp");
+				break;
+
 			default:
 				break;
 		}		

@@ -7,13 +7,15 @@ int pointer()
 	{
 		system("clear");
 
+
 		cout << "Here the basics of pointers are explained." << endl;
 		cout << endl;
+		cout << "Enter:" << endl << endl;
 		//cout << "to do" << endl;
-		cout << " <1> some infos on pointer (to do)" << endl;
+		cout << " <1> to display some infos on pointer (to do)" << endl;
 		cout << " <2> to show/edit source code of pointer example" << endl;
-		cout << " <3> run the example" << endl;
-		cout << " <10> view source code" << endl;
+		cout << " <3> to run the example" << endl;
+		cout << " <10> to view the source code" << endl;
 		cout << " <0> to go back" << endl;
 		cout << endl;
 		cout << " >> ";

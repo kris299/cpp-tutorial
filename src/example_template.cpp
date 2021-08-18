@@ -41,8 +41,9 @@ int example_template(string example_name)
 
 			case 3:
 				system("clear");
-				system(("g++ -v "+example_name+".cpp -o "+example_name)
-						.c_str());
+				/*system(("g++ -v "+example_name+".cpp -o "
+				   +example_name).c_str());*/
+				system(("make "+example_name).c_str());
 				cin.get();
 				break;
 

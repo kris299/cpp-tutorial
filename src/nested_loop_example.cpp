@@ -15,6 +15,7 @@ int main()
 		for (int jj = 1; jj < 11; ++jj)
 		{
 			cout << setw(3) << ii*jj << " ";
+			// setw(3) is part of <iomanip> and sets minimum output length
 		}
 
 		cout << endl;

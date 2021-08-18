@@ -1,10 +1,10 @@
 SHELL = /bin/sh
 
-OBJS = main.o algebra.o helloworld.o integers.o strings.o chars.o datatypes.o inputhandle.o loops.o conditional_statements.o input_and_output.o hello_world_tutorial.o integer_example.o integer_infos.o compiling.o pointer.o pointer_example.o example_template.o to_do.o
+OBJS = main.o algebra.o helloworld.o integers.o strings.o chars.o datatypes.o inputhandle.o loops.o conditional_statements.o input_and_output.o hello_world_tutorial.o integer_example.o integer_infos.o compiling.o pointer.o pointer_example.o example_template.o to_do.o menu_template.o vectors.o switch_template.o
 
 CFLAG = -Wall -g
 CC =g++
-INCLUDE = 
+INCLUDES = 
 LIBS = 
 
 cpp-tutorial:${OBJS}
@@ -24,6 +24,12 @@ nested_loop_example:
 
 do_while_loop_example:
 	${CC} ${CFLAG} do_while_loop_example.cpp -o $@
+
+vectors_example: inputhandle.o vectors_example.o
+	${CC} ${CFLAG} -o $@ inputhandle.o vectors_example.o
+
+break_continue_example: inputhandle.o break_continue_example.o
+	${CC} ${CFLAG} -o $@ inputhandle.o break_continue_example.o
 
 #hello_world.o: 
 #	${CC} -c hello_world.cpp

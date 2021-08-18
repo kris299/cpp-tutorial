@@ -23,6 +23,8 @@ to test the program enter:
 #### Restore the programm
 Since the program allows and motivates the user to modify its own source, it may happen, that these modifications will not compile. If debbuging is not successful, the program may be restored by entering:  
 `make restore`  
+To compile the modified code, enter "10" in the main menu, or insert in the terminal:    
+`make cpp-tutorial`  
 #### Backup user changes
 If the user is satisfied with her/his changes, they may be backuped by entering:  
 `make backup`
