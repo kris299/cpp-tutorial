@@ -27,6 +27,7 @@ int main()
 		cout << " <5> to learn about loops" << endl;
 		cout << " <6> to learn about input and output in c++" << endl;
 		cout << " <7> to learn about pointer in c++" << endl;
+		cout << " <8> to learn about functions in c++" << endl;
 		//cout << " <> add your own stuff" << endl;
 		cout << endl;
 		cout << " <9> to look//edit the source code" << endl;
@@ -46,7 +47,8 @@ int main()
 
 		cin.clear();
 		cin.ignore(INT_MAX, '\n');
-
+		
+		string switch_array[]={"array_example", "while_loop_example","for_loop_example","nested_loop_example","break_continue_example"};
 		switch (main){
 
 			case 0:
@@ -77,8 +79,15 @@ int main()
 				break;
 
 			case 8:
-				// add your own code here
+
+
+				//menu_template("functions");
+				
+				switch_template(5, switch_array);
 				break;
+			//case x:
+				// add your own code here
+				//break;
 
 			case 9:
 				system("vim main.cpp");

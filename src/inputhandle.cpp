@@ -15,7 +15,6 @@ int user_int_input(int the_int)
 		cin.clear();
 		cin.ignore(INT_MAX, '\n');
 	}
-
 	cin.clear();
 	cin.ignore(INT_MAX, '\n');
 	return the_int;

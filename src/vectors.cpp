@@ -12,7 +12,7 @@ int vectors()
 		menu_template(vectors_str);
 		//cin.get();
 		vectors = user_int_input(vectors);
-		switch_template(vectors, vectors_str);
+		//switch_template(vectors, vectors_str);
 	}
 	return 0;
 }

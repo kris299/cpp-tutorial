@@ -1,13 +1,13 @@
 #include "header.h"
 
-int pointer_example()
+int main()
 {
 	system("clear");
 	int a = 13;
 	int b = 7;
 	int array1[5] = {1,2,3,4,5};
 
-	// pointer to integer initialized as nullpointer; points to \"nothing\"
+	// pointer to integer initialized as nullpointer; points to "nothing"
 	int *ptr1 = NULL;
 	int *ptr2 = NULL;
 
@@ -35,7 +35,7 @@ int pointer_example()
 	cout << "*ptr1 = " << *(ptr1) << endl;
 	cout << endl;
 	cout << "Hit enter to continue ... " << endl;
-	//cin.get();
+	cin.get();
 	cout << endl;
 	cout << "Its possible to perform addition on pointers" << endl;
 	cout << "adding 1 to ptr1 results in:" << endl;
@@ -51,10 +51,12 @@ int pointer_example()
 	cout << "pointing at some random adress in memory is usually not reasonable.\n"			"It could have uses, to check what kind of data might be stored in\n"
 		"memory as part of a reverse engineering process."
 		<< endl;
+	cout << "Hit enter to continue ... " << endl;
+	cin.get();
 	cout << endl;
 	cout << "Address of array1, which is initialized as \n"
-	       	"\"int array1[5] = {1,2,3,4,5}\", is " << &array1 << endl;
-	cout << endl;
+	       	"\"int array1[5] = {1,2,3,4,5}\", is " << array1 << endl;
+	cout << endl;  
 	cout << "storing it in ptr2 ..." << endl;
 	ptr2 = array1;
 	cout << "ptr2 = " << ptr2 << endl;

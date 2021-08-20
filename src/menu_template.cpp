@@ -2,6 +2,7 @@
 
 int menu_template(string menu)
 {
+	int temp = -1;
 	system("clear");
 	cout << "Enter:" << endl <<endl;
 
@@ -12,6 +13,7 @@ int menu_template(string menu)
 	cout << " <0> to go back" << endl;
 	cout << endl;
 	cout << " >> ";
+	temp = user_int_input(temp);
 
 	return 0;
 }

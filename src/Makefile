@@ -1,6 +1,6 @@
 SHELL = /bin/sh
 
-OBJS = main.o algebra.o helloworld.o integers.o strings.o chars.o datatypes.o inputhandle.o loops.o conditional_statements.o input_and_output.o hello_world_tutorial.o integer_example.o integer_infos.o compiling.o pointer.o pointer_example.o example_template.o to_do.o menu_template.o vectors.o switch_template.o
+OBJS = main.o algebra.o helloworld.o integers.o strings.o chars.o datatypes.o inputhandle.o loops.o conditional_statements.o input_and_output.o hello_world_tutorial.o integer_example.o integer_infos.o compiling.o pointer.o example_template.o to_do.o menu_template.o vectors.o switch_template.o
 
 CFLAG = -Wall -g
 CC =g++
@@ -30,6 +30,12 @@ vectors_example: inputhandle.o vectors_example.o
 
 break_continue_example: inputhandle.o break_continue_example.o
 	${CC} ${CFLAG} -o $@ inputhandle.o break_continue_example.o
+
+pointer_example: pointer_example.o
+	${CC} ${CFLAG} -o $@ pointer_example.o
+
+array_example: array_example.o
+	${CC} ${CFLAG} -o $@ array_example.o
 
 #hello_world.o: 
 #	${CC} -c hello_world.cpp

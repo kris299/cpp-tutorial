@@ -15,6 +15,8 @@ int loops() {
 		cout << " <2> to learn \"while\" loops" << endl;
 		cout << " <3> to learn \"do while\" loops" << endl;
 		cout << " <4> to learn \"nested\" loops" << endl;
+		cout << " <5> to learn about \"break\" and \"continue\""
+			" statements in loops" << endl;
 		cout << " <10> to view/edit the code for this site" << endl;
 		cout << " <0> to go back"<< endl;
 		cout << endl;
@@ -55,6 +57,7 @@ int loops() {
 				break;
 
 			default:
+				cout << " >> " << endl;
 				break;
 		}		
 
