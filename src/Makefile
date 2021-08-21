@@ -10,8 +10,8 @@ LIBS =
 cpp-tutorial:${OBJS}
 	${CC} ${CFLAG} ${INCLUDES} -o $@ ${OBJS} ${LIBS}
 
-hello-world:
-	${CC} ${CFLAG} hello_world.cpp -o $@
+hello_world_example: hello_world_example.o
+	${CC} ${CFLAG} -o $@ hello_world_example.o
 
 for_loop_example:
 	${CC} ${CFLAG} for_loop_example.cpp -o $@
@@ -55,7 +55,7 @@ restore:
 user-restore:
 	-for ii in ../user_backup/*.bak; do jj="$${ii%.bak}"; cp "$$ii" ../src/"$${jj#../backup/}"; done
 
-all: cpp-tutorial hello-world for_loop_example while_loop_example do_while_loop_example nested_loop_example backup
+all: cpp-tutorial hello_world_example for_loop_example while_loop_example do_while_loop_example nested_loop_example backup
 
 clean:
 	-rm -f *.o

@@ -48,12 +48,34 @@ int datatypes()
 
 		cin.clear();
 		cin.ignore(INT_MAX, '\n');
-		if (datatypes == 1){
-			integers();
-		}
-		
-		if (datatypes == 2){
-			chars();
+
+		switch(datatypes)
+		{
+			case 0: 
+				break;
+			case 1:
+				integers();
+				break;
+			case 2:
+				chars();
+				break;
+			case 3:
+				to_do();
+				break;
+			case 4:
+				to_do();
+				break;
+			case 5:
+				to_do();
+				break;
+			case 6:
+				example_template("vectors_example");
+				break;
+			case 10:
+				system("vim datatypes.cpp");
+				break;
+			default:
+				break;
 		}
 	}
 	return 0;
