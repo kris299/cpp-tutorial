@@ -37,6 +37,9 @@ array_as_argument_example: array_as_argument_example.o
 array_returning_example: array_returning_example.o
 	${CC} ${CFLAG} array_returning_example.o -o $@
 
+iomanip_example: iomanip_example.o
+	${CC} ${CFLAG} iomanip_example.o -o $@
+
 iostream_example: iostream_example.o
 	${CC} ${CFLAG} iostream_example.o -o $@
 
