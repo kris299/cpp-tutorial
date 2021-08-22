@@ -92,7 +92,7 @@ int main()
 				//menu_template("functions");
 				
 				switch_array[0]= "function_basics_example";
-				switch_array[1]= "array_argument_example";
+				switch_array[1]= "array_as_argument_example";
 				switch_array[2]= "array_returning_example";
 					/*"while_loop_example", 
 					"for_loop_example",

@@ -31,8 +31,8 @@ linspace_example: linspace_example.o
 1D-array_example: 1D-array_example.o
 	${CC} ${CFLAG} 1D-array_example.o -o $@
 
-array_passing_example: array_passing_example.o
-	${CC} ${CFLAG} array_passing_example.o -o $@
+array_as_argument_example: array_as_argument_example.o
+	${CC} ${CFLAG} array_as_argument_example.o -o $@
 
 array_returning_example: array_returning_example.o
 	${CC} ${CFLAG} array_returning_example.o -o $@
