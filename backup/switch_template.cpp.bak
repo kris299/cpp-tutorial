@@ -1,18 +1,23 @@
 #include "header.h"
 
-int switch_template(int temp, string *switch_array)
+int switch_template(int temp, string *switch_array, string category)
 {
 	int switcher = -1;
-
+	string suffix = "_example";
 	while (switcher != 0)
 	{
+
 		system("clear");
+		cout << "Here basics about " << category << " are presented" << endl;
+		cout << endl;
 		cout << "Enter:" << endl << endl;
 
 		for (int ii = 1; ii < temp+1; ++ii)
 		{
 			cout << " <" << ii <<"> to learn about " 
-			<< switch_array[ii-1] << endl;
+			<< switch_array[ii-1].substr(0, switch_array[ii-1].length() -
+					suffix.length())
+		       	<< endl;
 		}
 		cout << " <10> to view at source of this site" << endl;
 		cout << " <0> to go back" << endl;
@@ -35,6 +40,7 @@ int switch_template(int temp, string *switch_array)
 					{
 						example_template(switch_array[1]);
 					}
+				break;
 			case 3:
 				
 				if(3 < temp+1)
@@ -59,28 +65,28 @@ int switch_template(int temp, string *switch_array)
 				//system(("vim "+switch_array[4]+".cpp").c_str());
 				break;
 			case 6: 
-				if(6 < temp)
+				if(6 < temp+1)
 					{
 						example_template(switch_array[5]);
 					}
 				//system(("vim "+switch_array[4]+".cpp").c_str());
 				break;
 			case 7: 
-				if(7 < temp)
+				if(7 < temp+1)
 					{
 						example_template(switch_array[6]);
 					}
 				//system(("vim "+switch_array[4]+".cpp").c_str());
 				break;
 			case 8: 
-				if(8 < temp)
+				if(8 < temp+1)
 					{
 						example_template(switch_array[7]);
 					}
 				//system(("vim "+switch_array[4]+".cpp").c_str());
 				break;
 			case 9: 
-				if(9 < temp)
+				if(9 < temp+1)
 					{
 						example_template(switch_array[8]);
 					}

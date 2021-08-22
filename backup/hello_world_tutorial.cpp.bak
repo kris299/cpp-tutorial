@@ -31,7 +31,7 @@ void hello_world_tutorial()
 		{
 			case 1:
 				system("clear");
-				system("vim hello_world.cpp");
+				system("vim hello_world_example.cpp");
 				// read and print helloworld.cpp
 				// cin.get();
 				break;

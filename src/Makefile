@@ -19,6 +19,27 @@ for_loop_example:
 while_loop_example:
 	${CC} ${CFLAG} while_loop_example.cpp -o $@
 
+3D-array_example: 3D-array_example.o
+	${CC} ${CFLAG} 3D-array_example.o -o $@
+
+linspace_example: linspace_example.o
+	${CC} ${CFLAG} linspace_example.o -o $@
+
+2D-array_example: 2D-array_example.o
+	${CC} ${CFLAG} 2D-array_example.o -o $@
+
+1D-array_example: 1D-array_example.o
+	${CC} ${CFLAG} 1D-array_example.o -o $@
+
+array_passing_example: array_passing_example.o
+	${CC} ${CFLAG} array_passing_example.o -o $@
+
+array_returning_example: array_returning_example.o
+	${CC} ${CFLAG} array_returning_example.o -o $@
+
+function_basics_example: function_basics_example.o
+	${CC} ${CFLAG} function_basics_example.o -o $@
+
 nested_loop_example:
 	${CC} ${CFLAG} nested_loop_example.cpp -o $@
 
