@@ -5,7 +5,7 @@ int example_template(string example_name)
 
 	int example_template = -1;
 
-	while (example_template)
+	while (example_template != 0)
 	{
 		system("clear");
 		cout << "Enter:" << endl;
@@ -25,6 +25,8 @@ int example_template(string example_name)
 
 		switch(example_template)
 		{
+			case 0:
+				break;
 			case 1:
 				system("clear");
 				system(("vim " + example_name + ".cpp").c_str());

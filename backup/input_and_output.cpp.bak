@@ -13,7 +13,7 @@ int input_and_output()
 		cout << endl;
 		cout << "Enter" << endl;
 		cout << endl;
-		cout << " <1> to learn about terminal output"<< endl;
+		cout << " <1> to learn about <iostream>" << endl;
 		cout << " <2> to learn about terminal input" << endl;
 		cout << " <3> to learn about reading textfiles" << endl;
 		cout << " <4> to learn about writing to textfiles" << endl;
@@ -28,11 +28,12 @@ int input_and_output()
 		{
 			case 1:
 				system("clear");
-				cout << "Not yet implemented ..." << endl;
+				example_template("iostream_example");
+				/*cout << "Not yet implemented ..." << endl;
 				cout << endl;
 				cout << "Hit Enter to continue" << endl;
 				cin.get();
-				//terminal_output();
+				//terminal_output();*/
 				break;
 			case 2:
 				//terminal_input();

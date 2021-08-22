@@ -13,7 +13,7 @@ int integer_infos();
 int compiling();
 int to_do();
 int menu_template(string menu);
-int switch_template(int temp, string switch_str);
+int switch_template(int temp, string switch_array[], string category);
 int vectors();
 int pointer();
 int pointer_example();

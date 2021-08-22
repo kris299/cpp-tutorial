@@ -27,12 +27,14 @@ int main()
 		cout << " <5> to learn about loops" << endl;
 		cout << " <6> to learn about input and output in c++" << endl;
 		cout << " <7> to learn about pointer in c++" << endl;
+		cout << " <8> to learn about functions in c++" << endl;
+		cout << " <9> to learn about arrays in c++" << endl;
 		//cout << " <> add your own stuff" << endl;
 		cout << endl;
-		cout << " <9> to look//edit the source code" << endl;
-		cout << " <10> to invoke \"make cpp-tutorial\" to complile changes!"
+		cout << " <10> to look//edit the source code" << endl;
+		cout << " <11> to invoke \"make cpp-tutorial\" to compile changes!"
 		       	<< endl;
-		cout << " <11> restart program" << endl;
+		cout << " <12> restart program" << endl;
  		cout << " <0> to quit program" << endl;
 		cout << endl;
 		cout << " >> ";
@@ -46,6 +48,14 @@ int main()
 
 		cin.clear();
 		cin.ignore(INT_MAX, '\n');
+		
+		string switch_array[]={
+			"",
+		       	"", 
+			"",
+			"",
+			"",
+			""};
 
 		switch (main){
 
@@ -77,21 +87,44 @@ int main()
 				break;
 
 			case 8:
-				// add your own code here
+
+
+				//menu_template("functions");
+				
+				switch_array[0]= "function_basics_example";
+				switch_array[1]= "array_as_argument_example";
+				switch_array[2]= "array_returning_example";
+					/*"while_loop_example", 
+					"for_loop_example",
+					"nested_loop_example",
+					"break_continue_example"};*/
+				switch_template(3, switch_array, "functions");
 				break;
 
 			case 9:
+				switch_array[0]= "1D-array_example";
+				switch_array[1]= "2D-array_example";
+				switch_array[2]= "3D-array_example";
+				switch_template(3, switch_array, "arrays");
+				break;
+
+			//case x:
+
+				// add your own code here
+				//break;
+
+			case 10:
 				system("vim main.cpp");
 				break;
 
-			case 10:
+			case 11:
 				system("make cpp-tutorial");
 				cout << endl;
 				cout << "Done. Press Enter to continue" << endl;
 				cin.get();
 				break;
 
-			case 11:
+			case 12:
 				system("./cpp-tutorial");
 				main = 0;
 				break;
@@ -103,27 +136,6 @@ int main()
 				break;
 		}
 
-		/*if (main == 1){
-			
-			helloworld();
-		}
-		if (main == 2){
-
-			datatypes();
-		}
-		
-		cin.clear();
-		string mystr = "Hello";
-		integers();
-		char c1 = 100; 
-		char c2 = 'v';
-		mychar(c1,c2);
-		mystringfunc();
-		mystring(mystr,mystr);
-		cout << endl;
-		cout << mydef << endl;
-		cout << "here comes fraction: a/b= " << endl;
-		*/
 	}
 	system("clear");
 	return 0;	

@@ -15,6 +15,7 @@ int pointer()
 		cout << " <1> to display some infos on pointer (to do)" << endl;
 		cout << " <2> to show/edit source code of pointer example" << endl;
 		cout << " <3> to run the example" << endl;
+		cout << " <4> to compile the changes" << endl;
 		cout << " <10> to view the source code" << endl;
 		cout << " <0> to go back" << endl;
 		cout << endl;
@@ -33,7 +34,10 @@ int pointer()
 				system("vim pointer_example.cpp");
 				break;
 			case 3:
-				pointer_example();
+				system("./pointer_example");
+				break;
+			case 4:
+				system("make pointer_example");
 				break;
 			case 10: 
 				system("clear");

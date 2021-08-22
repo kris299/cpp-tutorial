@@ -1,6 +1,6 @@
 SHELL = /bin/sh
 
-OBJS = main.o algebra.o helloworld.o integers.o strings.o chars.o datatypes.o inputhandle.o loops.o conditional_statements.o input_and_output.o hello_world_tutorial.o integer_example.o integer_infos.o compiling.o pointer.o pointer_example.o example_template.o to_do.o menu_template.o vectors.o switch_template.o
+OBJS = main.o algebra.o helloworld.o integers.o strings.o chars.o datatypes.o inputhandle.o loops.o conditional_statements.o input_and_output.o hello_world_tutorial.o integer_example.o integer_infos.o compiling.o pointer.o example_template.o to_do.o menu_template.o vectors.o switch_template.o
 
 CFLAG = -Wall -g
 CC =g++
@@ -10,14 +10,41 @@ LIBS =
 cpp-tutorial:${OBJS}
 	${CC} ${CFLAG} ${INCLUDES} -o $@ ${OBJS} ${LIBS}
 
-hello-world:
-	${CC} ${CFLAG} hello_world.cpp -o $@
+hello_world_example: hello_world_example.o
+	${CC} ${CFLAG} -o $@ hello_world_example.o
 
 for_loop_example:
 	${CC} ${CFLAG} for_loop_example.cpp -o $@
 
 while_loop_example:
 	${CC} ${CFLAG} while_loop_example.cpp -o $@
+
+3D-array_example: 3D-array_example.o
+	${CC} ${CFLAG} 3D-array_example.o -o $@
+
+linspace_example: linspace_example.o
+	${CC} ${CFLAG} linspace_example.o -o $@
+
+2D-array_example: 2D-array_example.o
+	${CC} ${CFLAG} 2D-array_example.o -o $@
+
+1D-array_example: 1D-array_example.o
+	${CC} ${CFLAG} 1D-array_example.o -o $@
+
+array_as_argument_example: array_as_argument_example.o
+	${CC} ${CFLAG} array_as_argument_example.o -o $@
+
+array_returning_example: array_returning_example.o
+	${CC} ${CFLAG} array_returning_example.o -o $@
+
+iomanip_example: iomanip_example.o
+	${CC} ${CFLAG} iomanip_example.o -o $@
+
+iostream_example: iostream_example.o
+	${CC} ${CFLAG} iostream_example.o -o $@
+
+function_basics_example: function_basics_example.o
+	${CC} ${CFLAG} function_basics_example.o -o $@
 
 nested_loop_example:
 	${CC} ${CFLAG} nested_loop_example.cpp -o $@
@@ -30,6 +57,12 @@ vectors_example: inputhandle.o vectors_example.o
 
 break_continue_example: inputhandle.o break_continue_example.o
 	${CC} ${CFLAG} -o $@ inputhandle.o break_continue_example.o
+
+pointer_example: pointer_example.o
+	${CC} ${CFLAG} -o $@ pointer_example.o
+
+array_example: array_example.o
+	${CC} ${CFLAG} -o $@ array_example.o
 
 #hello_world.o: 
 #	${CC} -c hello_world.cpp
@@ -49,7 +82,7 @@ restore:
 user-restore:
 	-for ii in ../user_backup/*.bak; do jj="$${ii%.bak}"; cp "$$ii" ../src/"$${jj#../backup/}"; done
 
-all: cpp-tutorial hello-world for_loop_example while_loop_example do_while_loop_example nested_loop_example backup
+all: cpp-tutorial hello_world_example for_loop_example while_loop_example do_while_loop_example nested_loop_example backup
 
 clean:
 	-rm -f *.o

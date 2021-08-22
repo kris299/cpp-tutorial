@@ -14,7 +14,7 @@ using namespace std;	// invoking the std namespace
 int main() 				// start of the program.
 {					// everything in the braket belongs to the 
 					// main function.
-	cout << "Hello World!" << endl;	// cout is part of the std namespace
+	cout << "Hello World!" << endl; // cout is part of the std namespace
        					// it prints out the string behind << to
 					// a line in the terminal. endl, also part
 					// of std ends this very line.
