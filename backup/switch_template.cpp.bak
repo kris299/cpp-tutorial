@@ -1,9 +1,11 @@
+#include <algorithm>
 #include "header.h"
 
 int switch_template(int temp, string *switch_array, string category)
 {
 	int switcher = -1;
 	string suffix = "_example";
+	string str1 ="";
 	while (switcher != 0)
 	{
 
@@ -14,10 +16,12 @@ int switch_template(int temp, string *switch_array, string category)
 
 		for (int ii = 1; ii < temp+1; ++ii)
 		{
+			str1 = switch_array[ii-1].substr(0,
+				       	switch_array[ii-1].length() -
+					suffix.length());
+			replace( str1.begin(), str1.end(), '_', ' ');
 			cout << " <" << ii <<"> to learn about " 
-			<< switch_array[ii-1].substr(0, switch_array[ii-1].length() -
-					suffix.length())
-		       	<< endl;
+			<< str1 << endl;
 		}
 		cout << " <10> to view at source of this site" << endl;
 		cout << " <0> to go back" << endl;
