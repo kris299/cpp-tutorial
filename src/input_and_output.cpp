@@ -49,10 +49,11 @@ int input_and_output()
 			case 3:
 				//reading_textfiles();
 				system("clear");
-				cout << "Not yet implemented ..." << endl;
+				example_template("file_reading_example");
+				/*cout << "Not yet implemented ..." << endl;
 				cout << endl;
 				cout << "Hit Enter to continue" << endl;
-				cin.get();
+				cin.get();*/
 				break;
 			case 4:
 				//writing_to_textfiles();

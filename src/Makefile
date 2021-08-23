@@ -52,11 +52,20 @@ nested_loop_example:
 do_while_loop_example:
 	${CC} ${CFLAG} do_while_loop_example.cpp -o $@
 
+string_example: inputhandle.o string_example.o
+	${CC} ${CFLAG} -o $@ inputhandle.o string_example.o
+
+reading_array_from_file_example: reading_array_from_file_example.o
+	${CC} ${CFLAG} -o $@ reading_array_from_file_example.o
+
 vectors_example: inputhandle.o vectors_example.o
 	${CC} ${CFLAG} -o $@ inputhandle.o vectors_example.o
 
 break_continue_example: inputhandle.o break_continue_example.o
 	${CC} ${CFLAG} -o $@ inputhandle.o break_continue_example.o
+
+file_reading_example: file_reading_example.o
+	${CC} ${CFLAG} -o $@ file_reading_example.o
 
 pointer_example: pointer_example.o
 	${CC} ${CFLAG} -o $@ pointer_example.o

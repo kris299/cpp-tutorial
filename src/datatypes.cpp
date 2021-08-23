@@ -66,7 +66,7 @@ int datatypes()
 				to_do();
 				break;
 			case 5:
-				to_do();
+				example_template("string_example");
 				break;
 			case 6:
 				example_template("vectors_example");
