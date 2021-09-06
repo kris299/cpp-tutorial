@@ -2,6 +2,8 @@
 //
 // #################################
 void helloworld();
+void print_main_menu();
+void main_menu_2();
 int integers();
 int chars();
 int user_int_input(int int_input);
