@@ -57,7 +57,7 @@ int datatypes()
 				integers();
 				break;
 			case 2:
-				chars();
+				example_template("char_example");
 				break;
 			case 3:
 				to_do();

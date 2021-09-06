@@ -12,6 +12,9 @@ int main()
 		{2,4,5,6,7}
 	};
 
+	// printing out the array
+	//
+	// Looping over its dimensions
 	for (int i=0; i<5; ++i)
 	{
 		for (int j=0; j<5; ++j)

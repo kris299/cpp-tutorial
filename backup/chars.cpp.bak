@@ -11,5 +11,6 @@ int chars(){
 	cout << char1 <<endl;
 	cout << "Value of char2 is = "; 
 	cout << char2 <<endl;
+	cin.get();
 	return 0;
 }
