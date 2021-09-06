@@ -65,6 +65,9 @@ string_example: inputhandle.o string_example.o
 friend_function_example: friend_function_example.o
 	${CC} ${CFLAG} -o $@ friend_function_example.o
 
+copy_constructors_example: copy_constructors_example.o
+	${CC} ${CFLAG} -o $@ copy_constructors_example.o
+
 data_structures_example: data_structures_example.o
 	${CC} ${CFLAG} -o $@ data_structures_example.o
  

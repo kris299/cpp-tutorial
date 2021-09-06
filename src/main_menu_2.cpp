@@ -54,12 +54,13 @@ void main_menu_2()
 			case 2:
 				switch_array[0]= "classes_example";
 				switch_array[1]= "friend_function_example";
-				switch_template(2, switch_array, "objects");
+				switch_array[2]= "copy_constructors_example";
+				switch_template(3, switch_array, "objects");
 				break;
 			
 
 			case 10:
-				system("vim cpp-tutorial");
+				system("vim main_menu_2.cpp");
 		}
 	}
 }
