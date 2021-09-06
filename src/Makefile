@@ -1,6 +1,7 @@
 SHELL = /bin/sh
 
-OBJS = main.o algebra.o helloworld.o integers.o strings.o chars.o datatypes.o inputhandle.o loops.o conditional_statements.o input_and_output.o hello_world_tutorial.o integer_example.o integer_infos.o compiling.o pointer.o example_template.o to_do.o menu_template.o vectors.o switch_template.o
+OBJS = main.o algebra.o helloworld.o integers.o strings.o chars.o datatypes.o inputhandle.o loops.o conditional_statements.o input_and_output.o hello_world_tutorial.o integer_example.o integer_infos.o compiling.o pointer.o example_template.o to_do.o menu_template.o vectors.o switch_template.o print_main_menu.o main_menu_2.o
+
 
 CFLAG = -Wall -g
 CC =g++
@@ -24,6 +25,12 @@ while_loop_example:
 
 linspace_example: linspace_example.o
 	${CC} ${CFLAG} linspace_example.o -o $@
+
+char_example: char_example.o
+	${CC} ${CFLAG} char_example.o -o $@
+
+classes_example: classes_example.o
+	${CC} ${CFLAG} classes_example.o -o $@
 
 2D-array_example: 2D-array_example.o
 	${CC} ${CFLAG} 2D-array_example.o -o $@
@@ -52,11 +59,26 @@ nested_loop_example:
 do_while_loop_example:
 	${CC} ${CFLAG} do_while_loop_example.cpp -o $@
 
+string_example: inputhandle.o string_example.o
+	${CC} ${CFLAG} -o $@ inputhandle.o string_example.o
+
+friend_function_example: friend_function_example.o
+	${CC} ${CFLAG} -o $@ friend_function_example.o
+
+data_structures_example: data_structures_example.o
+	${CC} ${CFLAG} -o $@ data_structures_example.o
+ 
+reading_array_from_file_example: reading_array_from_file_example.o
+	${CC} ${CFLAG} -o $@ reading_array_from_file_example.o
+
 vectors_example: inputhandle.o vectors_example.o
 	${CC} ${CFLAG} -o $@ inputhandle.o vectors_example.o
 
 break_continue_example: inputhandle.o break_continue_example.o
 	${CC} ${CFLAG} -o $@ inputhandle.o break_continue_example.o
+
+file_reading_example: file_reading_example.o
+	${CC} ${CFLAG} -o $@ file_reading_example.o
 
 pointer_example: pointer_example.o
 	${CC} ${CFLAG} -o $@ pointer_example.o

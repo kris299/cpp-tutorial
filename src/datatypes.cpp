@@ -57,7 +57,7 @@ int datatypes()
 				integers();
 				break;
 			case 2:
-				chars();
+				example_template("char_example");
 				break;
 			case 3:
 				to_do();
@@ -66,7 +66,7 @@ int datatypes()
 				to_do();
 				break;
 			case 5:
-				to_do();
+				example_template("string_example");
 				break;
 			case 6:
 				example_template("vectors_example");

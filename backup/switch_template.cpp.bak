@@ -1,4 +1,4 @@
-#include <algorithm>
+#include <algorithm>  // needed for replace
 #include "header.h"
 
 int switch_template(int temp, string *switch_array, string category)

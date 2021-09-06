@@ -8,6 +8,7 @@ int user_int_input(int the_int);
 
 int main()
 {
+	string str1;
 	cout << "The \"cout\" object prints out the standart output stream." << endl;
 	cout << "For example: " << endl;
 	cout << "cout << \"Hello World!\" << endl;" << endl;
@@ -23,6 +24,12 @@ int main()
 	int int1 = -1;
 	int1 = user_int_input(int1);
 	cout << endl << "You entered: " << int1 << endl;
+	cout << endl << "To read entire lines from the inputstream, the <iostream>"
+	       " library provides the getline(inputstream, my_string) function"
+	       << endl << "Lets try, enter a line of your choice:" << endl << endl;
+	getline(cin, str1);
+
+	cout << endl << "You entered: " << endl << str1 << endl;
 
 	return 0;
 }

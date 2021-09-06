@@ -1,30 +1,33 @@
-#include <iostream>
 #include <vector>
+#include <iostream>
 using namespace std;
+#include "header.h"
 
-#include "functions.h"
-
-int main()
+int main() 
 {
-	string str1 = "";
-	string str2 = "";
-	cout << "Hello" << endl;
-	cout << "The string data type allows the user to define arbitrary sign "
-		"strings" << endl;
+	vector<int> my_vector = {0,1,2,3,4,5,6,7,8,9,10,11,12,13};
+	int my_number = -1;
+	
+	cout <<	"Define a vector like this: \n"
+		"vector<int> my_vector = {0,1,2,3,4,5,6,7,8,9,10,11,12,13};"
+		<< endl << endl;
+	cout << "Enter a number to add to this vector please: ";
+	my_number = user_int_input(my_number);
+	cout << endl << "Add this number to the vector like this: \n"
+		"my_vector.push_back(my_number);" << endl << endl;
+	my_vector.push_back(my_number);
+	cout << "Lets print out the vector ..." << endl;
+	for (int i : my_vector)
+	{
+		cout << i << " ";
+		
+	}
 	cout << endl;
-	cout << "As an example, please enter two strings of your choice" << endl;
-	cout << "The first: ";
-	str1 = user_str_input(str1);
-	cout << endl;
-	cout << "The second: ";
-	str2 = user_str_input(str2);
-	cout << endl;
-
-
-	cout << "You entered for the first string: " << str1 << endl;
-	cout << "You entered for the second string: " << str2 << endl;
-	cout << endl;
-	cout << "Adding both together resuts in: "<< str1 + str2 << endl;
+	/*
+	for (int i = 0; i < (int) my_vector.size(); ++i)
+	{
+		cout << my_vector[i] << " ";
+	}
+	cout << endl;*/
 	return 0;
-
 }

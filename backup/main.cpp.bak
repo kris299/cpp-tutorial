@@ -105,7 +105,8 @@ int main()
 				switch_array[0]= "1D-array_example";
 				switch_array[1]= "2D-array_example";
 				switch_array[2]= "3D-array_example";
-				switch_template(3, switch_array, "arrays");
+				switch_array[3]= "reading_array_from_file_example";
+				switch_template(4, switch_array, "arrays");
 				break;
 
 			//case x:
