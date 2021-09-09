@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+
+// defining a class
 class Length
 {
 	public:

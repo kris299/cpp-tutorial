@@ -56,7 +56,8 @@ void main_menu_2()
 				switch_array[1]= "friend_function_example";
 				switch_array[2]= "copy_constructors_example";
 				switch_array[3]= "this_pointers_example";
-				switch_template(4, switch_array, "objects");
+				switch_array[4]= "pointers_to_classes_example";
+				switch_template(5, switch_array, "objects");
 				break;
 			
 

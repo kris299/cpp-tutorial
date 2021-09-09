@@ -65,6 +65,9 @@ string_example: inputhandle.o string_example.o
 friend_function_example: friend_function_example.o
 	${CC} ${CFLAG} -o $@ friend_function_example.o
 
+pointers_to_classes_example: pointers_to_classes_example.o
+	${CC} ${CFLAG} -o $@ pointers_to_classes_example.o
+
 this_pointers_example: this_pointers_example.o
 	${CC} ${CFLAG} -o $@ this_pointers_example.o
 
