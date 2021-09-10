@@ -29,12 +29,12 @@ int main()
 		cin.ignore(INT_MAX, '\n');
 		
 		string switch_array[]={
-			"",
-		       	"", 
-			"",
-			"",
-			"",
-			""};
+			"","",
+		       	"","", 
+			"","",
+			"","",
+			"","",
+			"",""};
 
 		switch (main){
 

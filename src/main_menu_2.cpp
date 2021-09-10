@@ -33,12 +33,12 @@ void main_menu_2()
 
 		
 		string switch_array[]={
-			"",
-		       	"", 
-			"",
-			"",
-			"",
-			""};
+			"","",
+		       	"","", 
+			"","",
+			"","",
+			"","",
+			"",""};
 
 		switch (menu2)
 		{
@@ -58,9 +58,12 @@ void main_menu_2()
 				switch_array[3]= "this_pointers_example";
 				switch_array[4]= "pointers_to_classes_example";
 				switch_array[5]= "static_members_of_classes_example";
+				switch_array[6]= "inheritance_and_derived_classes_example";
 
-				switch_template(6, switch_array, "objects");
+				switch_template(7, switch_array, "objects");
 				break;
+
+			
 			
 
 			case 10:
