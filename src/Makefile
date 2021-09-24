@@ -89,6 +89,9 @@ copy_constructors_example: copy_constructors_example.o
 data_structures_example: data_structures_example.o
 	${CC} ${CFLAG} -o $@ data_structures_example.o
  
+writing_to_textfile_example: writing_to_textfile_example.o
+	${CC} ${CFLAG} -o $@ writing_to_textfile_example.o
+ 
 reading_array_from_file_example: reading_array_from_file_example.o
 	${CC} ${CFLAG} -o $@ reading_array_from_file_example.o
 

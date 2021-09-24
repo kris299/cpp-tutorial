@@ -58,10 +58,7 @@ int input_and_output()
 			case 4:
 				//writing_to_textfiles();
 				system("clear");
-				cout << "Not yet implemented ..." << endl;
-				cout << endl;
-				cout << "Hit Enter to continue" << endl;
-				cin.get();
+				example_template("writing_to_textfile_example");
 				break;
 			case 10:
 				system("vim input_and_output.cpp");

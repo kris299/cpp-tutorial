@@ -9,7 +9,7 @@ int main()
 {
 	//declaring a vector of strings, where the lines of a text can be stored
 	vector<string> v_str;
-	//declaring a string, wher the ifstream can be stored line-wise.
+	//declaring a string, where the ifstream can be stored line-wise.
 	string line;
 
 	// Input files stream (ifstream) -> read mode

@@ -21,6 +21,7 @@ class Points
 			pointCount++;
 		}
 
+		// class Points as argument of a member function
 		float distance(Points p2)
 		{
 			return
@@ -43,9 +44,9 @@ int main()
 	Points point2(3,5);
 
 	// Calling the static Member by scope resolution operator
-	cout << "Number of points: " << Points :: pointCount <<endl;
+	cout << "Number of points: " << Points :: pointCount << endl;
 
-	cout <<  "Distance between points: " <<point1.distance(point2) << endl;
+	cout <<  "Distance between points: " << point1.distance(point2) << endl;
 
 	//Calling the static member as class member
 	cout << "Number of points: " << point2.pointCount << endl;
