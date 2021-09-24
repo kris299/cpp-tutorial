@@ -12,8 +12,8 @@ void main_menu_2()
 		cout << "Enter:" << endl;
 		cout << " <1> to learn about data structures" << endl; 
 		cout << " <2> to learn about objects" << endl;
-		/*cout << " <3> to learn about Data types in c++" << endl;
-		cout << " <4> to learn about conditional statements" << endl;
+		cout << " <3> to learn about exception handling in c++" << endl;
+		/*cout << " <4> to learn about conditional statements" << endl;
 		cout << " <5> to learn about loops" << endl;
 		cout << " <6> to learn about input and output in c++" << endl;
 		cout << " <7> to learn about pointer in c++" << endl;
@@ -64,6 +64,11 @@ void main_menu_2()
 				switch_array[8]= "operator_overloading_example";
 
 				switch_template(9, switch_array, "objects");
+				break;
+
+			case 3:
+				switch_array[0]= "throwing_exception_example";
+				switch_template(1, switch_array, "objects");
 				break;
 
 			

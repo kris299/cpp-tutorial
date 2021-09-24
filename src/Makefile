@@ -86,6 +86,9 @@ this_pointers_example: this_pointers_example.o
 copy_constructors_example: copy_constructors_example.o
 	${CC} ${CFLAG} -o $@ copy_constructors_example.o
 
+throwing_exception_example: throwing_exception_example.o
+	${CC} ${CFLAG} -o $@ throwing_exception_example.o
+
 data_structures_example: data_structures_example.o
 	${CC} ${CFLAG} -o $@ data_structures_example.o
  
