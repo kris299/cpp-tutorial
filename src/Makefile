@@ -68,6 +68,9 @@ friend_function_example: friend_function_example.o
 overloading_example: overloading_example.o
 	${CC} ${CFLAG} -o $@ overloading_example.o
 
+operator_overloading_example: operator_overloading_example.o
+	${CC} ${CFLAG} -o $@ operator_overloading_example.o
+
 inheritance_and_derived_classes_example: inheritance_and_derived_classes_example.o
 	${CC} ${CFLAG} -o $@ inheritance_and_derived_classes_example.o
 

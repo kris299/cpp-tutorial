@@ -61,8 +61,9 @@ void main_menu_2()
 				switch_array[6]= "inheritance_and_derived_classes"
 					"_example";
 				switch_array[7]= "overloading_example";
+				switch_array[8]= "operator_overloading_example";
 
-				switch_template(8, switch_array, "objects");
+				switch_template(9, switch_array, "objects");
 				break;
 
 			

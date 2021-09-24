@@ -13,7 +13,7 @@ using namespace std;
 
 int main()
 {
-	int main;
+	int main = -1;
 	while (main != 0){
 
 		print_main_menu();
