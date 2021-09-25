@@ -89,6 +89,15 @@ copy_constructors_example: copy_constructors_example.o
 throwing_exception_example: throwing_exception_example.o
 	${CC} ${CFLAG} -o $@ throwing_exception_example.o
 
+dynamic_memory_allocation_of_arrays_example: dynamic_memory_allocation_of_arrays_example.o
+	${CC} ${CFLAG} -o $@ dynamic_memory_allocation_of_arrays_example.o
+
+new_and_delete_operators_example: new_and_delete_operators_example.o
+	${CC} ${CFLAG} -o $@ new_and_delete_operators_example.o
+
+dynamic_memory_example: dynamic_memory_example.o
+	${CC} ${CFLAG} -o $@ dynamic_memory_example.o
+
 data_structures_example: data_structures_example.o
 	${CC} ${CFLAG} -o $@ data_structures_example.o
  

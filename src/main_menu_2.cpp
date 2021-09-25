@@ -13,8 +13,8 @@ void main_menu_2()
 		cout << " <1> to learn about data structures" << endl; 
 		cout << " <2> to learn about objects" << endl;
 		cout << " <3> to learn about exception handling in c++" << endl;
-		/*cout << " <4> to learn about conditional statements" << endl;
-		cout << " <5> to learn about loops" << endl;
+		cout << " <4> to learn about dynamic memory" << endl;
+		/*cout << " <5> to learn about loops" << endl;
 		cout << " <6> to learn about input and output in c++" << endl;
 		cout << " <7> to learn about pointer in c++" << endl;
 		cout << " <8> to learn about functions in c++" << endl;
@@ -68,10 +68,16 @@ void main_menu_2()
 
 			case 3:
 				switch_array[0]= "throwing_exception_example";
-				switch_template(1, switch_array, "objects");
+				switch_template(1, switch_array, "exceptions");
 				break;
 
 			
+			case 4:
+				switch_array[0]= "new_and_delete_operators_example";
+				switch_array[1]= "dynamic_memory_allocation"
+					"_of_arrays_example";
+				switch_template(2, switch_array, "dynamic memory");
+				break;
 			
 
 			case 10:

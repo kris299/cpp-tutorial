@@ -8,7 +8,7 @@ double divide(double x, double y) {
 	if(y == 0) 
 	{
 		// throwing the exeption
-		throw "divide by zero not defined!";
+		throw "dividing by zero is not defined!";
 	}
 
 	return x/y;
