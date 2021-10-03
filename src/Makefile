@@ -86,6 +86,9 @@ this_pointers_example: this_pointers_example.o
 copy_constructors_example: copy_constructors_example.o
 	${CC} ${CFLAG} -o $@ copy_constructors_example.o
 
+incrementing_and_decrementing_pointer_example: incrementing_and_decrementing_pointer_example.o
+	${CC} ${CFLAG} -o $@ incrementing_and_decrementing_pointer_example.o
+
 throwing_exception_example: throwing_exception_example.o
 	${CC} ${CFLAG} -o $@ throwing_exception_example.o
 

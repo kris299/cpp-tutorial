@@ -76,7 +76,11 @@ void main_menu_2()
 				switch_array[0]= "new_and_delete_operators_example";
 				switch_array[1]= "dynamic_memory_allocation"
 					"_of_arrays_example";
-				switch_template(2, switch_array, "dynamic memory");
+				switch_array[2]= "dynamic_memory_allocation_"
+					"for_objects_example";
+				switch_array[3]= "dynamic_memory_allocation_with_"
+					"pointer_to_pointer_example";
+				switch_template(4, switch_array, "dynamic memory");
 				break;
 			
 

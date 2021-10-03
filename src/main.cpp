@@ -62,7 +62,15 @@ int main()
 				break;
 
 			case 7:
-				pointer();
+
+				switch_array[0]="pointer_example";
+				switch_array[1]="incrementing_and_decrementing_"
+					"pointer_example";
+				//
+
+				switch_template(2, switch_array, "pointers");
+
+				//pointer();
 				break;
 
 			case 8:
