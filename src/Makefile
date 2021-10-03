@@ -65,8 +65,53 @@ string_example: inputhandle.o string_example.o
 friend_function_example: friend_function_example.o
 	${CC} ${CFLAG} -o $@ friend_function_example.o
 
+overloading_example: overloading_example.o
+	${CC} ${CFLAG} -o $@ overloading_example.o
+
+operator_overloading_example: operator_overloading_example.o
+	${CC} ${CFLAG} -o $@ operator_overloading_example.o
+
+inheritance_and_derived_classes_example: inheritance_and_derived_classes_example.o
+	${CC} ${CFLAG} -o $@ inheritance_and_derived_classes_example.o
+
+static_members_of_classes_example: static_members_of_classes_example.o
+	${CC} ${CFLAG} -o $@ static_members_of_classes_example.o
+
+pointers_to_classes_example: pointers_to_classes_example.o
+	${CC} ${CFLAG} -o $@ pointers_to_classes_example.o
+
+this_pointers_example: this_pointers_example.o
+	${CC} ${CFLAG} -o $@ this_pointers_example.o
+
+copy_constructors_example: copy_constructors_example.o
+	${CC} ${CFLAG} -o $@ copy_constructors_example.o
+
+incrementing_and_decrementing_pointer_example: incrementing_and_decrementing_pointer_example.o
+	${CC} ${CFLAG} -o $@ incrementing_and_decrementing_pointer_example.o
+
+throwing_exception_example: throwing_exception_example.o
+	${CC} ${CFLAG} -o $@ throwing_exception_example.o
+
+dynamic_memory_allocation_with_pointer_to_pointer_example: dynamic_memory_allocation_with_pointer_to_pointer_example.o
+	${CC} ${CFLAG} -o $@ dynamic_memory_allocation_with_pointer_to_pointer_example.o
+
+dynamic_memory_allocation_for_objects_example: dynamic_memory_allocation_for_objects_example.o
+	${CC} ${CFLAG} -o $@ dynamic_memory_allocation_for_objects_example.o
+
+dynamic_memory_allocation_of_arrays_example: dynamic_memory_allocation_of_arrays_example.o
+	${CC} ${CFLAG} -o $@ dynamic_memory_allocation_of_arrays_example.o
+
+new_and_delete_operators_example: new_and_delete_operators_example.o
+	${CC} ${CFLAG} -o $@ new_and_delete_operators_example.o
+
+dynamic_memory_example: dynamic_memory_example.o
+	${CC} ${CFLAG} -o $@ dynamic_memory_example.o
+
 data_structures_example: data_structures_example.o
 	${CC} ${CFLAG} -o $@ data_structures_example.o
+ 
+writing_to_textfile_example: writing_to_textfile_example.o
+	${CC} ${CFLAG} -o $@ writing_to_textfile_example.o
  
 reading_array_from_file_example: reading_array_from_file_example.o
 	${CC} ${CFLAG} -o $@ reading_array_from_file_example.o

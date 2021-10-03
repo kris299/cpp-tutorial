@@ -7,7 +7,7 @@ int main()
 	char char1;
 	char char2;
 
-	//initializing char1 and char2 with single quotes.
+	//initializing char1.
 	char1 = 't';
 	char2 = '3';
 
@@ -34,24 +34,5 @@ int main()
 		}
 
 	}
-
-
-	//declaring a pointer to a char
-	char * p_char;
-	char char3 = 'c';
-
-	// storing the address of char1 in that pointer
-	p_char = &char3;
-	cout << endl << endl << "#### pointers and chars ####" << endl << endl;
-	cout << "char1 has the address: " << (void *) &char3 << endl;
-	cout << "char pointer with address: " << *p_char
-	   	<< "points to: " << p_char << endl;
-
-	/*
-	char const * p_char;
-
-	p_char = "cav2";
-*/
-
 	return 0;
 }

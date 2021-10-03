@@ -13,7 +13,7 @@ using namespace std;
 
 int main()
 {
-	int main;
+	int main = -1;
 	while (main != 0){
 
 		print_main_menu();
@@ -29,12 +29,12 @@ int main()
 		cin.ignore(INT_MAX, '\n');
 		
 		string switch_array[]={
-			"",
-		       	"", 
-			"",
-			"",
-			"",
-			""};
+			"","",
+		       	"","", 
+			"","",
+			"","",
+			"","",
+			"",""};
 
 		switch (main){
 
@@ -62,7 +62,15 @@ int main()
 				break;
 
 			case 7:
-				pointer();
+
+				switch_array[0]="pointer_example";
+				switch_array[1]="incrementing_and_decrementing_"
+					"pointer_example";
+				//
+
+				switch_template(2, switch_array, "pointers");
+
+				//pointer();
 				break;
 
 			case 8:
