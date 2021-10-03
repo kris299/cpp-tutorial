@@ -7,7 +7,7 @@ using namespace std;
 //
 //heap:
 //
-// - dynamically allocatable, slower that stack
+// - dynamically allocatable, slower than stack
 // - used, if size of needed memory is not known in advance
 // - allocate memory with the "new" operator
 // - use "delete" operator to de-allocate memory allocated by "new"

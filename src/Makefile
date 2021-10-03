@@ -89,6 +89,12 @@ copy_constructors_example: copy_constructors_example.o
 throwing_exception_example: throwing_exception_example.o
 	${CC} ${CFLAG} -o $@ throwing_exception_example.o
 
+dynamic_memory_allocation_with_pointer_to_pointer_example: dynamic_memory_allocation_with_pointer_to_pointer_example.o
+	${CC} ${CFLAG} -o $@ dynamic_memory_allocation_with_pointer_to_pointer_example.o
+
+dynamic_memory_allocation_for_objects_example: dynamic_memory_allocation_for_objects_example.o
+	${CC} ${CFLAG} -o $@ dynamic_memory_allocation_for_objects_example.o
+
 dynamic_memory_allocation_of_arrays_example: dynamic_memory_allocation_of_arrays_example.o
 	${CC} ${CFLAG} -o $@ dynamic_memory_allocation_of_arrays_example.o
 
